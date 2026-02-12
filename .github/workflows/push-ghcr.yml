@@ -10,9 +10,9 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  # Using the reusable workflow for Java tests
-  java-test:
-    uses: ./.github/workflows/java-test-reusable.yml
+    # Using the reusable workflow for Java tests
+    java-test:
+      uses: ./.github/workflows/java-test-reusable.yml
 
     docker-ci:
       needs: java-test
